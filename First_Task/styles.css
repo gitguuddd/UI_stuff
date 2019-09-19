@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Header/logo*/
+.header {
+  padding: 4rem;
+  background: #EAE7DC;
+  color: #E85A4F;
+  text-align: center;
+  opacity: 0.9;
+  animation: fadein 2.5s;
+  -webkit-animation: fadein 2.5s;
+}
+
+/*Navigation bar*/
+.navbar {
+  display: flex;
+  background-color: #D8C3A5;
+  position: center;
+  opacity: 0.9;
+  animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+}
+
+.navbar a {
+  color: #E98074;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #E85A4F;
+  color: #EAE7DC;
+}
+
+/*Column container*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Main column*/
+.main {
+  flex: 100%;
+  background-color: #EAE7DC;
+  padding: 1.5rem;
+  opacity: 0.9;
+  animation: fadein 4.5s;
+  -webkit-animation: fadein 4.5s;
+}
+
+/*General images*/
+.img {
+  background-color: #D8C3A5;
+  width: 50%;
+  height: 25rem;
+  opacity: 1;
+  padding: 1.5rem;
+  animation: fadeimg 5s;
+  -webkit-animation: fadeimg 5s;
+}
+
+/*Small flags in the Casualties section*/
+.smallflag {
+  padding: 1rem;
+  opacity: 1;
+  animation: fadeimg 5s;
+  -webkit-animation: fadeimg 5s;
+}
+
+/*General text*/
+.text {
+  text-align: center;
+  flex: 100%;
+}
+
+/*Text under Media section images*/
+.text-img {
+  text-align: center;
+  flex: 100%;
+  border-bottom: 1px solid #8E8D8A;
+}
+
+/*Casualties section header*/
+.cheader {
+  text-align: center;
+  flex: 100%;
+}
+
+/*Table div style*/
+.tdiv {
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+/*Form div style*/
+.form {
+  background-color: #E85A4F;
+  color: #EAE7DC;
+  padding: 3rem;
+  border-radius: 0.25rem;
+}
+
+/*Text input style*/
+input[type=text] {
+  outline: none;
+  color: #E98074;
+  background-color: #EAE7DC;
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+
+/*Selection style*/
+select {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #EAE7DC;
+  color: #E98074;
+}
+
+/*Submit button style*/
+input[type=submit] {
+  outline: none;
+  background-color: #8E8D8A;
+  color: #EAE7DC;
+  border: none;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  margin: 0.25rem 0.125rem;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+/*Table style*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:hover {
+  background-color: #D8C3A5;
+}
+
+/*Table head*/
+th {
+  background-color: #E85A4F;
+  color: #EAE7DC;
+  height: 3rem;
+}
+
+td, th {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+table, th, td {
+  border: 1px solid #8E8D8A;
+}
+
+ul {
+  list-style-type: square;
+  background: #E85A4F;
+  padding: 1.25rem;
+}
+
+ul li {
+  background: #EAE7DC;
+  padding: 0.25rem;
+}
+
+body {
+  background-image: url("images/background.jpg");
+  margin: 0;
+  padding: 5rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #EAE7DC;
+  font-family: 'B612', sans-serif;
+  color: #E98074;
+  opacity: 0.9;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+/*For Chrome*/
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@keyframes fadeimg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*For Chrome*/
+@-webkit-keyframes fadeimg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Media rules for responsive size*/
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}

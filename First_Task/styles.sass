@@ -1,0 +1,208 @@
+$Satin-Linen: #EAE7DC
+$Akaroa: #D8C3A5
+$Natural-Gray: #8E8D8A
+$Apricot: #E98074
+$Burnt-Sienna: #E85A4F
+*
+  box-sizing: border-box
+
+/*Header/logo*/
+.header
+  padding: 4rem
+  background: #{$Satin-Linen}
+  color: #{$Burnt-Sienna}
+  text-align: center
+  opacity: 0.9
+  animation: fadein 2.5s
+  -webkit-animation: fadein 2.5s;
+
+/*Navigation bar*/
+.navbar
+  display: flex
+  background-color: #{$Akaroa}
+  position: center
+  opacity: 0.9
+  animation: fadein 3s
+  -webkit-animation: fadein 3s
+  a
+    color: #{$Apricot}
+    padding: 1rem 2rem
+    text-decoration: none
+    text-align: center
+  a:hover
+    background-color: #{$Burnt-Sienna}
+    color: #{$Satin-Linen}
+
+/*Column container*/
+.row
+  display: flex
+  flex-wrap: wrap
+
+/*Main column*/
+.main
+  flex: 100%
+  background-color: #{$Satin-Linen}
+  padding: 1.5rem
+  opacity: 0.9
+  animation: fadein 4.5s
+  -webkit-animation: fadein 4.5s;
+
+/*General images*/
+.img
+  background-color: #{$Akaroa}
+  width: 50%
+  height: 25rem
+  opacity: 1
+  padding: 1.5rem
+  animation: fadeimg 5s
+  -webkit-animation: fadeimg 5s;
+
+/*Small flags in the Casualties section*/
+.smallflag
+  padding: 1rem
+  opacity: 1
+  animation: fadeimg 5s
+  -webkit-animation: fadeimg 5s;
+
+/*General text*/
+.text
+  text-align: center
+  flex: 100%
+
+/*Text under Media section images*/
+.text-img
+  text-align: center
+  flex: 100%
+  border-bottom: 1px solid #{$Natural-Gray}
+
+/*Casualties section header*/
+.cheader
+  text-align: center
+  flex: 100%
+
+/*Table div style*/
+.tdiv
+  padding: 1.5rem
+  overflow-x: auto
+
+/*Form div style*/
+.form
+  background-color: #{$Burnt-Sienna}
+  color: #{$Satin-Linen}
+  padding: 3rem
+  border-radius: 0.25rem
+
+/*Text input style*/
+input[type=text]
+  outline: none
+  color: #{$Apricot}
+  background-color: #{$Satin-Linen}
+  width: 100%
+  padding: 1rem 1.5rem
+
+/*Selection style*/
+select
+  width: 100%
+  padding: 1rem 1.25rem
+  border: none
+  border-radius: 0.25rem
+  background-color: #{$Satin-Linen}
+  color: #{$Apricot}
+
+/*Submit button style*/
+input[type=submit]
+  outline: none
+  background-color: #{$Natural-Gray}
+  color: #{$Satin-Linen}
+  border: none
+  padding: 1rem 2rem
+  text-decoration: none
+  margin: 0.25rem 0.125rem
+  cursor: pointer
+
+
+input[type=submit]:hover
+  background-color: red
+
+/*Table style*/
+table
+  width: 100%
+  border-collapse: collapse
+
+
+tr:hover
+    background-color: #{$Akaroa}
+
+/*Table head*/
+th
+  background-color: #{$Burnt-Sienna}
+  color: #{$Satin-Linen}
+  height: 3rem
+
+
+td, th
+  padding: 1rem
+  text-align: left
+  border-bottom: 1px solid black
+
+table, th, td
+  border: 1px solid #{$Natural-Gray}
+
+ul
+  list-style-type: square
+  background: #{$Burnt-Sienna}
+  padding: 1.25rem
+  li
+    background: #{$Satin-Linen}
+    padding: 0.25rem
+
+body
+  background-image: url("images/background.jpg")
+  margin: 0
+  padding: 5rem
+  background-position: center center
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-size: cover
+  background-color: #{$Satin-Linen}
+  font-family: 'B612', sans-serif
+  color: #{$Apricot}
+  opacity: 0.9
+
+@keyframes fadein
+  from
+    opacity: 0
+  to
+    opacity: 0.9
+
+/*For Chrome*/
+@-webkit-keyframes fadein
+  from
+    opacity: 0
+  to
+    opacity: 0.9
+
+@keyframes fadeimg
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+/*For Chrome*/
+@-webkit-keyframes fadeimg
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+/*Media rules for responsive size*/
+@media screen and (max-width:700px)
+  .row, .navbar
+    flex-direction: column
+
+@media screen and (max-width:700px)
+  body
+    padding-left: 0rem
+    padding-right: 0rem
+    padding-top: 0rem
+    padding-bottom: 0rem
